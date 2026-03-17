@@ -118,10 +118,59 @@
 
       <section class="education">
         <h2>Education</h2>
-        
+        <div class="edu-items">
+          <ul class="edu-item">
+            <li>2025 RS School - JS / Front-end Pre-school (stage-0);</li>
+            <li>2025 RS School - JS / Front-end - <span>course not completed</span></li>
+            <li>2026 RS School - JS / Front-end Pre-school (stage-0) - <span>I'm studying now</span></li>
+          </ul>
+        </div>
       </section>
 
+      <section class="code-example">
+        <h2>Code Sample</h2>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code>
+            'use strict';
+
+            function findUniq(arr) {
+              const fr = arr.reduce((acc, item) => {
+                acc[item] = (acc[item] || 0) + 1;
+                return acc;
+              }, {});
+              for (const key of Object.keys(fr)) {
+                if (fr[key] === 1) return Number(key);
+              }
+            }
+          </code></pre>
+        </div>
+      </section>
+
+     <section class="links">
+      <h2>Links</h2>
+     </section>
+        <div class="links-grid">
+          <a href="https://github.com/d-vasilenko" target="_blank" rel="noopener noreferrer">
+            <img src="./images/github-sign.png" alt="github-icon" width="40" height="40">
+            <span class="link-text">GitHub</span>
+          </a>
+          <a href="https://monkeytype.com/profile/ghostinchip" target="_blank" rel="noopener noreferrer">
+            <img src="./images/monkytype_icon.png" alt="monkytype-icon" width="50" height="50">
+            <span class="link-text">monkeytype</span>
+          </a>
+          <a href="https://www.codewars.com/users/rsschool_fafa0dc3c5904036" target="_blank" rel="noopener noreferrer">
+            <img src="./images/codewars_icon.jpg" alt="codewars-icon" width="50" height="50">
+            <span class="link-text">CodeWars</span>
+          </a>
+
+        </div>
     </main>
+    <footer class="footer">
+      <div class="footer-info">
+        <p class="legal-info">2026 Denis Vasilenko</p>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
