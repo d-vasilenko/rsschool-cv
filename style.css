@@ -138,3 +138,26 @@ body {
   height: 24px;
   object-fit: contain;
 }
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.skill-tag {
+  background: rgb(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: bacgronud 0.3s ease, transform 0.2s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
