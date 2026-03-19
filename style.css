@@ -161,3 +161,34 @@ body {
   background: var(--color-accent);
   transform: translateY(-2px);
 }
+
+.languages {
+  text-align: left;
+}
+
+.lang-list {
+  list-style: none;
+}
+
+.lang-list li {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.lang-list li:last-child {
+  border-bottom: none;
+}
+
+.lang-level {
+  background: var(--color-accent);
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #f9f7f7;
+}
