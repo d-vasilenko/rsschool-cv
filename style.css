@@ -462,3 +462,98 @@ body {
     justify-content: center;
   }
 }
+
+@media print {
+  body {
+    background: white;
+    padding: 0;
+    color: black;
+  }
+
+  .cv-wrapper {
+    margin: 0;
+    box-shadow: none;
+    max-width: 100%;
+    border-radius: 0;
+    display: block;
+  }
+
+  .sidebar {
+    background: white;
+    color: black;
+    border-bottom: 2px solid #333;
+    padding: 20px 0;
+    text-align: left;
+  }
+
+  .sidebar h3 {
+    color: black;
+    border-bottom-color: #333;
+    text-align: left;
+  }
+
+  .contact-item {
+    color: black;
+    justify-content: flex-start;
+  }
+
+  .contact-item a {
+    color: black;
+  }
+
+  .skill-tag {
+    background: white;
+    border: 1px solid #333;
+    color: black;
+  }
+
+  .lang-level {
+    background: none;
+    border: 1px solid #333;
+    color: black;
+  }
+
+  .status-badge,
+  .copy-btn {
+    display: none !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: #555
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #555;
+  }
+  
+  .code-block {
+    background: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+
+  .code-block code {
+    color: #333;
+  }
+  
+  .links-grid a {
+    background: white;
+    border: 1px solid #333;
+    color: black;
+  }
+
+  .about,
+  .education,
+  .code-example,
+  .work-experience,
+  .links {
+    page-break-inside: avoid;
+  }
+
+  .footer {
+    display: none;
+  }
+}
