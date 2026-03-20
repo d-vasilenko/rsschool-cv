@@ -155,7 +155,7 @@ body {
   font-size: 0.85rem;
   font-weight: 500;
   white-space: nowrap;
-  transition: bacgronud 0.3s ease, transform 0.2s ease;
+  transition: backgronud 0.3s ease, transform 0.2s ease;
   cursor: default;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 .main-content section {
-  margin-bottom: bar(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
 }
 
 .main-content h2 {
@@ -298,6 +298,42 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
+.work-experience {
+  margin-bottom: var(--spacing-lg);
+}
+
+.project-list {
+  list-style: none;
+  margin-left: var(--spacing-md);
+}
+
+.project-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: var(--spacing-sm);
+  font-size: 1rem;
+}
+
+.project-item::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.project-item a {
+  color: var(--text-main);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--color-accent);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-item a:hover  {
+  color: var(--color-accent);
+  border-bottom-style: solid;
+}
+
 .links-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -322,7 +358,7 @@ body {
 
 .links-grid a:hover {
   transform: translateY(-4px);
-  background: var(--color-primary);
+  background: var(--color-accent);
   color: var(--text-light);
 }
 
