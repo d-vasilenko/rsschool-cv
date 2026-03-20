@@ -383,3 +383,82 @@ body {
 .legal-info {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .cv-wrapper {
+    grid-template-columns: 1fr;
+    margin: 0;
+    border-radius: 0;
+  }
+  .sidebar {
+    padding: var(--spacing-md);
+    text-align: center;
+  }
+
+  .contact-list,
+  .skills-container,
+  .languages,
+  .lang-list li {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .photo-container {
+    margin: 0 auto var(--spacing-lg);
+  }
+
+  .sidebar h3 {
+    text-align: center;
+  }
+
+  .main-content {
+    padding: var(--spacing-md);
+  }
+
+  .edu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: var(--spacing-sm);
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header .role {
+    font-size: 1rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .main-content,
+  .sidebar {
+    padding: var(--spacing-sm)
+  }
+
+  .copy-btn {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+}
