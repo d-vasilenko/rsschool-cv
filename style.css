@@ -557,3 +557,67 @@ body {
     display: none;
   }
 }
+
+a,
+button,
+.skill-tag,
+.links-grid a,
+.copy-btn {
+  transition: all 0.3s ease;
+}
+
+.profile-photo,
+.code-block pre {
+  transition: none;
+}
+
+a:focus,
+button:focus,
+.skill-tag:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-page: #1a1a2e;
+    --bg-card: #16213e;
+    --text-main: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --bg-secondary: #1f2937;
+    --border-color: #374151;
+  }
+  
+  body {
+    background: var(--bg-page);
+  }
+  
+  .cv-wrapper {
+    background: var(--bg-card);
+  }
+  
+  .header h1,
+  .main-content h2 {
+    color: var(--text-light);
+  }
+  
+  .about p,
+  .edu-item {
+    color: var(--text-main);
+  }
+  
+  .links-grid a {
+    background: var(--bg-secondary);
+    color: var(--text-main);
+  }
+  
+  .footer {
+    background: var(--bg-secondary);
+    color: var(--text-muted);
+  }
+}
