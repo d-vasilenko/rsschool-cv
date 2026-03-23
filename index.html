@@ -115,7 +115,7 @@
           <pre><code id="code-content">'use strict';
 
 function findUniq(arr) {
-  const fr = arr.reduce((acc, item) => {
+  const fr = arr.reduce((acc, item) =&gt; {
     acc[item] = (acc[item] || 0) + 1;
     return acc;
   }, {});
