@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <title>Denis Vasilenko</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+  </style>
+</head>
+<body>
+  <div class="cv-wrapper">
+    <aside class="sidebar">
+      <div class="photo-container">
+        <img src="./images/my_photo_v1.jpg" alt="photo by Denis Vasilenko" class="profile-photo" width="200" height="200" loading="lazy">
+        <span class="status-badge"></span>
+      </div>
+      <section class="contacts">
+        <h3>Contacts</h3>
+        <address class="contact-list">
+          <ul>
+            <li>
+              <a href="mailto:ghostinchip@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="./images/email_icon.png" alt="" class="contact-icon" width="24" height="24">
+                <span>ghostinchip@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/d_vasilenk0" target="_blank" rel="noopener noreferrer">
+                <img src="./images/telegram_icon.png" alt="" class="contact-icon" width="24" height="24">
+                <span>Som3per5on</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.com/users/810052995785162772" target="_blank" rel="noopener noreferrer">
+                <img src="./images/discord.png" alt="" class="contact-icon" width="24" height="24">
+                <span>ghostinchip</span>
+              </a>
+            </li>
+            <li>
+              <img src="./images/map.png" alt="" class="contact-icon" width="24" height="24">
+              <span>Russia, Sochi</span>
+            </li>
+          </ul>
+        </address>
+      </section>
+      <section class="skills" id="skills">
+        <h3>Skills</h3>
+        <div class="skills-container">
+          <ul class="skills-list">
+            <li><span class="skill-tag">HTML5</span></li>
+            <li><span class="skill-tag">CSS</span></li>
+            <li><span class="skill-tag">JavaScript</span></li>
+            <li><span class="skill-tag">Python</span></li>
+            <li><span class="skill-tag">Git</span></li>
+            <li><span class="skill-tag">React</span></li>
+            <li><span class="skill-tag">Angular</span></li>
+            <li><span class="skill-tag">Node.JS</span></li>
+            <li><span class="skill-tag">Advanced Math</span></li>
+            <li><span class="skill-tag">web3</span></li>
+            <li><span class="skill-tag">Vite</span></li>
+            <li><span class="skill-tag">Touch Typing</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="languages">
+        <h3>Languages</h3>
+        <ul class="lang-list">
+          <li><span>Russian</span> <span class="lang-level">Native</span></li>
+          <li><span>English</span> <span class="lang-level">A2</span></li>
+        </ul>
+      </section>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1>Denis Vasilenko</h1>
+        <p class="role">Frontend Developer</p>
+        <nav class="nav-links" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="about" id="about">
+        <h2>About me</h2>
+        <p>My journey into technology began in childhood, fueled by a curiosity about how computers work and a love for problem-solving. I pursued this passion academically, earning a degree in Mathematics during Russia's specialist program, which gave me a strong foundation in logic and analytical thinking.</p>
+        <p>Later, I expanded my expertise with a second degree in Law and worked in the legal field. However, programming remained a constant presence in my life. This unique combination of skills led me to my current focus: building Legal Tech solutions that make legal services more accessible through technology.</p>
+        <p>I'm now developing my own Legal Tech startup while deepening my technical skills as a full-stack developer. I enjoy tackling complex challenges, whether in code, mathematics, or product development.</p>
+        <p><strong>When I'm not coding:</strong> I practice touch typing in Russian, English, and programming languages, solve mathematical problems, and explore the mountains near my home in Sochi, Russia.</p>
+        <p><strong>Current Goal:</strong> Completing my Frontend JavaScript certification and continuing my journey toward full-stack mastery.</p>
+      </section>
+      <section class="education" id="education">
+        <h2>Education</h2>
+        <div class="edu-items">
+          <ul class="edu-item">
+            <li>2025 RS School - JS / Front-end Pre-school (stage-0)</li>
+            <li>2025 RS School - JS / Front-end - <span>course not completed</span></li>
+            <li>2026 RS School - JS / Front-end Pre-school (stage-0) - <span>I'm studying now</span></li>
+          </ul>
+        </div>
+      </section>
+      <section class="code-example">
+        <h2>Code Sample</h2>
+        <div class="code-block">
+          <button class="copy-btn" type="button"><span class="copy-text">Copy</span></button>
+          <pre><code id="code-content">'use strict';
+
+function findUniq(arr) {
+  const fr = arr.reduce((acc, item) =&gt; {
+    acc[item] = (acc[item] || 0) + 1;
+    return acc;
+  }, {});
+  for (const key of Object.keys(fr)) {
+    if (fr[key] === 1) return Number(key);
+  }
+}</code></pre>
+        </div>
+      </section>
+      <section class="work-experience" id="projects">
+        <h2>Work Experience</h2>
+        <ul class="project-list">
+          <li class="project-item"><a href="http://advokat-afonkin.ru" target="_blank" rel="noopener noreferrer">Site for advocate</a></li>
+          <li class="project-item"><a href="https://github.com/d-vasilenko/rsschool-cv" target="_blank" rel="noopener noreferrer">Source this CV</a></li>
+        </ul>
+      </section>
+      <section class="links">
+        <h2>Links</h2>
+        <div class="links-grid">
+          <a href="https://github.com/d-vasilenko" target="_blank" rel="noopener noreferrer">
+            <img src="./images/github-sign.png" alt="" class="link-icon" width="50" height="50">
+            <span class="link-text">GitHub</span>
+          </a>
+          <a href="https://monkeytype.com/profile/ghostinchip" target="_blank" rel="noopener noreferrer">
+            <img src="./images/monkeytype_logo.svg" alt="" class="link-icon" width="50" height="50">
+            <span class="link-text">monkeytype</span>
+          </a>
+          <a href="https://www.codewars.com/users/rsschool_fafa0dc3c5904036" target="_blank" rel="noopener noreferrer">
+            <img src="./images/codewars_logo.png" alt="" class="link-icon" width="50" height="50">
+            <span class="link-text">CodeWars</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-info">
+        <p class="legal-info">© 2026 Denis Vasilenko | <a href="https://github.com/d-vasilenko" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <div class="course-info">
+          <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank" rel="noopener noreferrer">
+            <img src="images/logo-rs.svg" alt="Rolling Scopes School">
+            <span>RS School - JS / Front-end Pre-school (Stage 0)</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./src/script.js" defer></script>
+</body>
+</html>
